@@ -1,0 +1,24 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "description": "core backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amoghku02/minor-core.git"
+  },
+  "author": "Amogh Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amoghku02/minor-core/issues"
+  },
+  "homepage": "https://github.com/amoghku02/minor-core#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.7"
+  }
+}
