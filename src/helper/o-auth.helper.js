@@ -47,7 +47,7 @@ const subscribeApp = async (token, pageId) => {
     try {
         let subscribeResponse = await axios(subscribeConfig);
         subscribeResponse = subscribeResponse.data;
-
+        console.log("subscribe response", subscribeResponse.data);
         return {
             access_token: token,
             id: pageId,

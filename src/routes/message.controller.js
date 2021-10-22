@@ -21,12 +21,12 @@ router.post("/:channel/webhook", async (req, res) => {
     let account = await getBotAccounts(channel, entityId);
 
     if(!account) 
-        return res.status(400).send("No page found");
+        return res.status(404).send("No page found");
     
     let bot = await fetchBot(account.botStrId);
 
     if(!bot)
-        return res.status(400).send("Bot not found");
+        return res.status(404).send("Bot not found");
 
     bot.bot_flow.tokenConfig = {
         "accessToken": account.accessToken,

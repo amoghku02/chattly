@@ -23,7 +23,6 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-validator": "^6.12.2",
-    "fuse.js": "^6.4.6",
     "fuzzy-string-matching": "^1.0.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.7",

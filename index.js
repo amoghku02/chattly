@@ -11,13 +11,13 @@ const port = process.env.PORT || 5000;
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-    return res.status(200).send("Hello freak bitches!");
+    return res.status(200).send("Hello");
 });
 
-app.use("/oauth", require("./src/routes/o-auth.controller"));
-app.use("/ew", require("./src/routes/message.controller"));
-app.use("/chi", require("./src/routes/user.controller"));
-app.use("/yuck", require("./src/routes/auth.controller"));
+app.use("/earth", require("./src/routes/o-auth.controller"));
+app.use("/mars", require("./src/routes/message.controller"));
+app.use("/jupiter", require("./src/routes/user.controller"));
+app.use("/saturn", require("./src/routes/auth.controller"));
 
 app.listen(port, () => {
     console.log(`Server running on port ${port} 🔥`);
