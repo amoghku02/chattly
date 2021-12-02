@@ -1,0 +1,200 @@
+{
+    "steps": {
+        "1": {
+            "id": "1",
+            "event": "1",
+            "parent_node": "1",
+            "uttrances": [
+                {
+                    "userSays": ""
+                },
+                {
+                    "userSays": "What is your name "
+                },
+                {
+                    "userSays": "hello"
+                },
+                {
+                    "userSays": "hi"
+                }
+            ],
+            "reply": {
+                "type": "quickReply",
+                "quickReply": {
+                    "prompt": "Hello from the bot",
+                    "buttons": [
+                        {
+                            "id": "btn_21",
+                            "title": "Tell me a joke"
+                        },
+                        {
+                            "id": "btn_22",
+                            "title": "Exit"
+                        }
+                    ]
+                }
+            },
+            "label": "QUICKREPLY2",
+            "connectedNodes": [
+                "btn_21",
+                "btn_22"
+            ],
+            "position": {
+                "x": 261.8931721103737,
+                "y": 236.60421091109887
+            }
+        },
+        "2": {
+            "uttrances": [
+                {
+                    "userSays": ""
+                }
+            ],
+            "connectedNodes": [
+                "2"
+            ],
+            "position": {
+                "x": -103.8558801082963,
+                "y": 439.1406296804194
+            },
+            "reply": {
+                "type": "text",
+                "text": "You've entered the game :smirk:"
+            },
+            "label": "TEXT3",
+            "parent_node": "1",
+            "event": "btn_222",
+            "type": "text",
+            "id": "2"
+        },
+        "3": {
+            "uttrances": [
+                {
+                    "userSays": ""
+                }
+            ],
+            "connectedNodes": [
+                "2"
+            ],
+            "position": {
+                "x": -103.8558801082963,
+                "y": 439.1406296804194
+            },
+            "reply": {
+                "type": "text",
+                "text": "Thank you :smile:"
+            },
+            "label": "TEXT3",
+            "parent_node": "1",
+            "event": "btn_22",
+            "type": "text",
+            "id": "3"
+        },
+        "4": {
+            "id": "1",
+            "event": "btn_21",
+            "parent_node": "1",
+            "uttrances": [
+                {
+                    "userSays": ""
+                },
+                {
+                    "userSays": "tell me a joke"
+                },
+                {
+                    "userSays": "joke"
+                },
+                {
+                    "userSays": "I want to listen joke"
+                }
+            ],
+            "reply": {
+                "type": "quickReply",
+                "quickReply": {
+                    "prompt": "One joke, coming up! What is a sea monster’s favorite snack? \"Ships and dip.\" :ship:",
+                    "buttons": [
+                        {
+                            "id": "btn_01",
+                            "title": "another one"
+                        },
+                        {
+                            "id": "btn_22",
+                            "title": "Exit"
+                        }
+                    ]
+                }
+            },
+            "label": "QUICKREPLY2",
+            "connectedNodes": [
+                "btn_21",
+                "btn_22"
+            ],
+            "position": {
+                "x": 261.8931721103737,
+                "y": 236.60421091109887
+            }
+        },
+        "5": {
+            "id": "1",
+            "event": "btn_01",
+            "parent_node": "1",
+            "uttrances": [
+                {
+                    "userSays": "another joke"
+                }
+            ],
+            "reply": {
+                "type": "quickReply",
+                "quickReply": {
+                    "prompt": "This might make you laugh. How do robots eat guacamole? With computer chips. :laughing:",
+                    "buttons": [
+                        {
+                            "id": "btn_23",
+                            "title": "another one"
+                        },
+                        {
+                            "id": "btn_22",
+                            "title": "Exit"
+                        }
+                    ]
+                }
+            },
+            "label": "QUICKREPLY2",
+            "connectedNodes": [
+                "btn_21",
+                "btn_22"
+            ],
+            "position": {
+                "x": 261.8931721103737,
+                "y": 236.60421091109887
+            }
+        },
+        "6": {
+            "uttrances": [
+                {
+                    "userSays": ""
+                }
+            ],
+            "connectedNodes": [
+                "2"
+            ],
+            "position": {
+                "x": -103.8558801082963,
+                "y": 439.1406296804194
+            },
+            "reply": {
+                "type": "text",
+                "text": "Sorry I'm out of jokes"
+            },
+            "label": "TEXT3",
+            "parent_node": "1",
+            "event": "btn_23",
+            "type": "text",
+            "id": "2"
+        }
+    },
+    "threshold": {
+        "$numberDecimal": "0.5"
+    },
+    "fallback_text": "Sorry, I didn't understand you"
+}

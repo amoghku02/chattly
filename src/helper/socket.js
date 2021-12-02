@@ -16,7 +16,7 @@ module.exports = {
         
     
     
-        // console.log("sktServerData", JSON.stringify(sktServerData, null, 4));
+        console.log("sktServerData", JSON.stringify(sktServerData, null, 4));
     
         let reqOptions = {
           url: `https://graph.facebook.com/${process.env.FACEBOOK_GRAPH}/${formatted_message.receiver}/messages?access_token=${token}`,
@@ -25,7 +25,7 @@ module.exports = {
         };
     
         reqOptions = JSON.parse(emoji.emojify(JSON.stringify(reqOptions)));
-    
+        console.log(JSON.stringify(reqOptions, null, 4));
         try{
             let response = await axios(reqOptions);
     
